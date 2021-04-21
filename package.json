@@ -1,0 +1,25 @@
+{
+  "name": "tp-calculatrice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "sass": "node-sass scss/main.scss css/style.css && node-sass --watch scss/main.scss css/style.css",
+    "dev": "concurrently live-server \"npm run sass\"",
+    "build": "node-sass scss/main.scss css/style.css && postcss css/style.css --replace"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "autoprefixer": "^10.2.5",
+    "concurrently": "^6.0.2",
+    "cssnano": "^5.0.1",
+    "postcss": "^8.2.10",
+    "postcss-cli": "^8.3.1"
+  }
+}
